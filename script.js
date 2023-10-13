@@ -77,6 +77,8 @@ button_game_baru.addEventListener('click', function () {
     current_score0.textContent = 0;
     current_score1.textContent = 0;
     player_0.classList.add("player-active");
+    gambar_dadu.style.display = "block";
+    button_putar.style.display = "block";
     player_1.classList.remove("player-active");
     const winningPlayer = document.querySelector(`.player-${player_active}`);    
     winningPlayer.classList.remove('player-winner');
